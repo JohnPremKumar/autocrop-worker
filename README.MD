@@ -1,6 +1,6 @@
 autocrop-worker
 ===========
-A simple, fast autocrop library which automagically crops the image. The cropping related functions are based on based on autocrop.js<https://github.com/lqez/autocrop.js>. This library offloads image processing work from main thread to workers using workerpool.
+A simple, fast autocrop library which automagically crops the image. The cropping related functions are based on based on autocrop.js <https://github.com/lqez/autocrop.js>. This library offloads image processing work from main thread to workers using workerpool.
 
 Demo site: <https://johnpremkumar.github.io/autocrop-worker/demo/>
 
@@ -11,14 +11,17 @@ Install
 $ npm install autocrop-worker
 ```
 
-
-```As ES6 Module
-import autocrop from 'autocrop-worker'
-```
-
 Usage
 -----
 
+### As ES6 Module with bundler like webpack, etc. ###
+
+```javascript
+import autocrop from 'autocrop-worker'
+autocrop(<original_image_element>, (target_image_element), (options));
+```
+
+### As legacy javascript files using script tags. ###
 ```javascript
 <script src='path/to/autocrop-worker.min.js'></script>
 ...
