@@ -14,7 +14,7 @@ $ npm install autocrop-worker
 Usage
 -----
 
-### As ES6 Module with bundler like webpack, etc. ###
+### As ES6 Module with bundlers like webpack, etc. ###
 
 ```javascript
 import autocrop from 'autocrop-worker'
