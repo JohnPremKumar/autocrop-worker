@@ -11,6 +11,7 @@ const autoCropDefaultOptions = {
   margin: '2%',
   allowInvert: true,
   marker: 'cropped',
+  version: new Date().getTime(),
 };
 
 const autocrop = (originalElement, targetElement, options) => {
@@ -29,7 +30,7 @@ const autocrop = (originalElement, targetElement, options) => {
     canvas.height = height;
     context.drawImage(imgElement, 0, 0);
     const pixels = context.getImageData(0, 0, width, height).data;
-    pool.exec(cropper, [{ pixels, width, height }, options]).then((response) => {
+    pool.exec(cropper, [{ pixels, width, height }, mergedOptions]).then((response) => {
       context.clearRect(0, 0, response.width, response.height);
       canvas.width = response.width;
       canvas.height = response.height;
@@ -58,9 +59,9 @@ const autocrop = (originalElement, targetElement, options) => {
       throw err;
     });
   };
-  imgElement.crossorigin = 'anonymous';
+  imgElement.crossOrigin = 'anonymous';
   imgElement.decoding = 'async';
-  imgElement.src = originalElement.src;
+  imgElement.src = `${originalElement.src}?version=${mergedOptions.version}`;
 };
 
 export default autocrop;

@@ -21,7 +21,7 @@ export default [
       terser(),
     ],
     output: {
-      file: `dist/${pkg.name}.min.js`,
+      file: pkg.browser,
       format: "umd",
       name: "autocrop",
       esModule: false,
