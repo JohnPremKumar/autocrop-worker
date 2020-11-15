@@ -1,6 +1,6 @@
 {
   "name": "autocrop-worker",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A simple, fast autocrop library which automagically crops the image. The cropping related functions are based on based on autocrop.js. This library offloads image processing work from mainthread to workers using workerpool.",
   "main": "dist/autocrop-worker.cjs.js",
   "module": "dist/autocrop-worker.esm.js",
@@ -15,7 +15,7 @@
     "worker",
     "autocropjs"
   ],
-  "repository" : {
+  "repository": {
     "type": "git",
     "url": "git://github.com/JohnPremKumar/autocrop-worker.git"
   },
