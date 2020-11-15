@@ -23,6 +23,8 @@ autocrop(<original_image_element>, (target_image_element), (options));
 
 ### As legacy javascript files using script tags. ###
 ```javascript
+// workerpool need to be loaded before autocrop-worker.min.js
+<script type="text/javascript" src="https://unpkg.com/workerpool@6.0.3/dist/workerpool.min.js"></script>
 <script src='path/to/autocrop-worker.min.js'></script>
 ...
 <script>

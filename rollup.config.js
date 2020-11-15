@@ -1,6 +1,7 @@
 import { nodeResolve } from "@rollup/plugin-node-resolve";
 import { terser } from "rollup-plugin-terser";
 import { eslint } from "rollup-plugin-eslint";
+import excludeDependenciesFromBundle from "rollup-plugin-exclude-dependencies-from-bundle";
 import commonjs from 'rollup-plugin-commonjs';
 import babel from "@rollup/plugin-babel";
 import pkg from "./package.json";
@@ -12,6 +13,7 @@ export default [
     input,
     plugins: [
       nodeResolve(),
+      excludeDependenciesFromBundle(),
       commonjs(),
       babel({
         babelHelpers: "bundled",
@@ -30,6 +32,7 @@ export default [
     input,
     plugins: [
       nodeResolve(),
+      excludeDependenciesFromBundle(),
       commonjs(),
       eslint(),
     ],
