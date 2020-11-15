@@ -56,7 +56,7 @@ const autocrop = (originalElement, targetElement, options) => {
       target.width = response.width;
       originalElement.setAttribute(mergedOptions.marker, 'true');
     }).catch((err) => {
-      throw err;
+      console.log(err);
     });
   };
   imgElement.crossOrigin = 'anonymous';

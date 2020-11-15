@@ -1,5 +1,15 @@
 autocrop-worker
 ===========
+[![npm][npm]][npm-url]
+[![license][license]][license-url]
+<a href="https://npmcharts.com/compare/autocrop-worker?minimal=true">
+  <img src="https://img.shields.io/npm/dm/autocrop-worker.svg">
+</a>
+<a href="https://packagephobia.com/result?p=autocrop-worker">
+  <img src="https://packagephobia.com/badge?p=autocrop-worker" alt="install size">
+</a>
+<br>
+
 A simple, fast autocrop library which automagically crops the image. The cropping related functions are based on autocrop.js <https://github.com/lqez/autocrop.js>. This library offloads image processing work from main thread to workers using workerpool.
 
 Demo site: <https://johnpremkumar.github.io/autocrop-worker/demo/>
@@ -56,7 +66,23 @@ Example
 ![Example image of autocrop-worker.js](./docs/demo/images/result.png)
 
 
+Used By
+-------
+
+<a href="https://www.hackerkid.org/" target="_blank">
+  <img src="https://www.hackerkid.org/images/favicons/favicon.ico" alt="HackerKidLogo">
+  <p>HackerKid</p>
+</a>
+
+
 License
 -------
 
 MIT
+
+
+
+[npm]: https://img.shields.io/npm/v/autocrop-worker.svg
+[npm-url]: https://npmjs.com/package/autocrop-worker
+[license]: https://img.shields.io/npm/l/autocrop-worker
+[license-url]: https://github.com/JohnPremKumar/autocrop-worker/blob/main/LICENCE
