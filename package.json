@@ -15,6 +15,10 @@
     "worker",
     "autocropjs"
   ],
+  "repository" : {
+    "type": "git",
+    "url": "git://github.com/JohnPremKumar/autocrop-worker.git"
+  },
   "author": "John Prem Kumar S",
   "license": "MIT",
   "devDependencies": {
