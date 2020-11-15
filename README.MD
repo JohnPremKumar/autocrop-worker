@@ -1,6 +1,6 @@
 autocrop-worker
 ===========
-A simple, fast autocrop library which automagically crops the image. The cropping related functions are based on based on autocrop.js <https://github.com/lqez/autocrop.js>. This library offloads image processing work from main thread to workers using workerpool.
+A simple, fast autocrop library which automagically crops the image. The cropping related functions are based on autocrop.js <https://github.com/lqez/autocrop.js>. This library offloads image processing work from main thread to workers using workerpool.
 
 Demo site: <https://johnpremkumar.github.io/autocrop-worker/demo/>
 
