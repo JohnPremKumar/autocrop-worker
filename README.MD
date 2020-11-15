@@ -5,8 +5,8 @@ autocrop-worker
 <a href="https://npmcharts.com/compare/autocrop-worker?minimal=true">
   <img src="https://img.shields.io/npm/dm/autocrop-worker.svg">
 </a>
-<a href="https://packagephobia.com/result?p=autocrop-worker">
-  <img src="https://packagephobia.com/badge?p=autocrop-worker" alt="install size">
+<a href="https://img.shields.io/bundlephobia/minzip/autocrop-worker">
+  <img src="https://img.shields.io/bundlephobia/minzip/autocrop-worker">
 </a>
 <br>
 
