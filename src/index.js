@@ -56,7 +56,8 @@ const autocrop = (originalElement, targetElement, options) => {
       target.width = response.width;
       originalElement.setAttribute(mergedOptions.marker, 'true');
     }).catch((err) => {
-      console.log(err);
+      /* eslint no-console: ["error", { allow: ["error"] }] */
+      console.error(err);
     });
   };
   imgElement.crossOrigin = 'anonymous';
