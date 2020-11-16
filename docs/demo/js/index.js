@@ -1,9 +1,6 @@
 function loadFile(files) {
-  let reader = new FileReader();
-  reader.readAsDataURL(files[0]);
-  reader.onload = function (e) {
-    process(e.target.result);
-  };
+  const imagePath = URL.createObjectURL(files[0]);
+  process(imagePath);
 }
 
 function process(src) {

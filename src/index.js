@@ -61,7 +61,7 @@ const autocrop = (originalElement, targetElement, options) => {
   };
   imgElement.crossOrigin = 'anonymous';
   imgElement.decoding = 'async';
-  imgElement.src = `${originalElement.src}?version=${mergedOptions.version}`;
+  imgElement.src = mergedOptions.version ? `${originalElement.src}?version=${mergedOptions.version}` : originalElement.src;
 };
 
 export default autocrop;

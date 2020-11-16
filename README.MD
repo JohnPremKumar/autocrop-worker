@@ -35,7 +35,7 @@ autocrop(<original_image_element>, (target_image_element), (options));
 ```javascript
 // workerpool need to be loaded before autocrop-worker.min.js
 <script type="text/javascript" src="https://unpkg.com/workerpool@6.0.3/dist/workerpool.min.js"></script>
-<script src="https://unpkg.com/autocrop-worker@1.0.3/dist/autocrop-worker.min.js"></script>
+<script type="text/javascript" src="https://unpkg.com/autocrop-worker@1.0.3/dist/autocrop-worker.min.js"></script>
 ...
 <script>
 autocrop(<original_image_element>, (target_image_element), (options));
@@ -56,7 +56,8 @@ const autoCropDefaultOptions = {
   margin: '2%',             // Margin
   allowInvert: true,        // Allow invert if needed.
   marker: 'cropped',        // Add a marker attribute to prevent duplicated cropping.
-  version: <anything>       // Defaults to current timestamp. Used for avoiding crossorigin taint issues due to previous cache
+  version: boolean|string   /* Defaults to current timestamp. Used for avoiding crossorigin taint issues due to previous cache.
+                               Set it to false for dataURL and blobs */
 };
 ```
 
