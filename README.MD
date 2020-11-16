@@ -35,7 +35,7 @@ autocrop(<original_image_element>, (target_image_element), (options));
 ```javascript
 // workerpool need to be loaded before autocrop-worker.min.js
 <script type="text/javascript" src="https://unpkg.com/workerpool@6.0.3/dist/workerpool.min.js"></script>
-<script type="text/javascript" src="https://unpkg.com/autocrop-worker@1.0.3/dist/autocrop-worker.min.js"></script>
+<script type="text/javascript" src="https://unpkg.com/autocrop-worker@1.0.4/dist/autocrop-worker.min.js"></script>
 ...
 <script>
 autocrop(<original_image_element>, (target_image_element), (options));
